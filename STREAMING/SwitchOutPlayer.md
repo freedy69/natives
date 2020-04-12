@@ -24,6 +24,9 @@ switchType: 0 - 3
 1: 3 steps out from ped
 2: 1 step out from ped
 3: 1 step towards ped
+
+SwitchOutPlayer(PlayerPedId(), 7373, 2); - Goes up in the sky with reduced screen filter (SwitchInPlayer doesn't work)
+SwitchOutPlayer(PlayerPedId(), 289263, 2); - Goes up in the sky with no filter at all (SwitchInPlayer doesn't work)
 ```
 
 ## Parameters

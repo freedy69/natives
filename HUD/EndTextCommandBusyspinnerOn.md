@@ -10,17 +10,18 @@ void END_TEXT_COMMAND_BUSYSPINNER_ON(int busySpinnerType);
 ```
 
 ```
-This does NOT get called per frame. Call it once to show, then use UI::_REMOVE_LOADING_PROMPT to remove it  
-Changes the the above native's (UI::_SET_LOADING_PROMPT_TEXT_ENTRY) spinning circle type.  
-Types:  
-enum LoadingPromptTypes  
-{  
-	LOADING_PROMPT_LEFT,  
-	LOADING_PROMPT_LEFT_2,  
-	LOADING_PROMPT_LEFT_3,  
-	SAVE_PROMPT_LEFT,  
-	LOADING_PROMPT_RIGHT,  
-};  
+Changes loading icon.
+Doesn't get called every frame. Can be called once to show. To remove it, use BusyspinnerOff();
+
+Icon types:
+1, 2, 3 - Save icon (Spinning towards the right side of the screen)
+4 - Rockstar cloud save icon (Save icon, but yellow)
+5 - Loading icon (Spinning towards the left side of the screen)
+
+Example:
+BeginTextCommandBusyspinnerOn("STRING")
+EndTextCommandBusyspinnerOn(4)
+
 ```
 
 ## Parameters

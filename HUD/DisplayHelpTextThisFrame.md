@@ -5,21 +5,23 @@ ns: HUD
 
 ```c
 // 0x960C9FF8F616E41C 0x18E3360A
-void DISPLAY_HELP_TEXT_THIS_FRAME(char* message, BOOL p1);
+void DISPLAY_HELP_TEXT_THIS_FRAME(text entry: string, BOOL p1);
 ```
 
 ```
-The messages are localized strings.  
-Examples:  
-"No_bus_money"  
-"Enter_bus"  
-"Tour_help"  
-"LETTERS_HELP2"  
-"Dummy"  
-**The bool appears to always be false (if it even is a bool, as it's represented by a zero)**  
+Displays help text every frame. 
+The bool appears to always be false (if it even is a bool, as it's represented by a zero)
 --------  
 p1 doesn't seem to make a difference, regardless of the state it's in.   
-picture of where on the screen this is displayed?  
+Isn't displayed in the 'info' pause menu tab.
+```
+## Examples
+```js
+AddTextEntry("HELPMESSAGE", "This help message will be called every frame.");
+while (true) {
+	await Wait(0);
+	DisplayHelpTextThisFrame("HELPMESSAGE", false);
+}
 ```
 
 ## Parameters

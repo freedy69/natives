@@ -10,8 +10,8 @@ Hash GET_CURRENT_FRONTEND_MENU_VERSION();
 ```
 
 ```
+Returns the version of the currently active frontend menu. Returns -1 if no menu is active.
 if (UI::_2309595AD6145265() == ${fe_menu_version_empty_no_background})  
-Seems to get the current frontend menu  
 ```
 
 ## Return value

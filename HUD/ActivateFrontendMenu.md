@@ -21,6 +21,9 @@ the int p2 is actually a component variable. When the pause menu is visible, it 
 Example : Function.Call(Hash.ACTIVATE_FRONTEND_MENU,-1171018317, 0, 42);  
 Result : Opens the "Online" tab without pausing the menu, with -1 it opens the map.  
 
+Things to note:
+- If you run this with invalid/no parameters and no menu is active, your game will crash.
+- If a menu is active and you run this again (Parameters don't matter), the menu will be removed automatically
 
 Below is a list of all known Frontend Menu Hashes.
 
@@ -49,7 +52,7 @@ Below is a list of all known Frontend Menu Hashes.
 - FE_MENU_VERSION_JOINING_SCREEN
 - FE_MENU_VERSION_LANDING_MENU
 - FE_MENU_VERSION_LANDING_KEYMAPPING_MENU
-
+Examples: https://imgur.com/a/UmJo5d9
 
 ## Parameters
 * **menuhash**: 

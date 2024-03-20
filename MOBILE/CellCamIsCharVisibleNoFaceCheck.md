@@ -10,7 +10,6 @@ BOOL CELL_CAM_IS_CHAR_VISIBLE_NO_FACE_CHECK(Entity entity);
 
 
 ## Parameters
-* **entity**: The entity handle.
+* **entity**: 
 
 ## Return value
-Returns if the ped is visible in the camera, but disregards if we can see their face.
